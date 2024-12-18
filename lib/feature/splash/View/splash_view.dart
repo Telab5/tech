@@ -5,9 +5,27 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
-        child: Text(""),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "Tech Me",
+              style: TextStyle(
+                fontFamily: 'poppins',
+                fontSize: 26,
+                letterSpacing: 12,
+              ),
+            ),
+            Text(
+              "Mr Ashraf Nour App",
+              style: TextStyle(
+                color: Colors.grey,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
